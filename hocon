@@ -1,0 +1,19 @@
+#!/usr/bin/env escript
+
+main(["help"]) ->
+    io:format("Usage: hocon /path/to/file~n", []);
+main([File]) ->
+    case hocon:load(File) of
+        {ok, Map} ->
+            pp_json(Map);
+        {error, Reason} ->
+            io:format("Failed to read ~p~nreason:~p~n", [File, Reason]),
+            init:stop(1)
+    end;
+main(_Args) ->
+    io:format(user, "Usage: hocon /path/to/file~n", []),
+    init:stop(1).
+
+pp_json(Map) ->
+    IoData = jsone:encode(Map, [{indent, 2}, {space, 1}]),
+    io:format(user, "~s", [IoData]).

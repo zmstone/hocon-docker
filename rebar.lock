@@ -1,0 +1,19 @@
+{"1.2.0",
+[{<<"getopt">>,{pkg,<<"getopt">>,<<"1.0.1">>},1},
+ {<<"hocon">>,
+  {git,"https://github.com/emqx/hocon.git",
+       {ref,"c64cae9d8fb25b3fce13231a9f675bd0dd4edf4d"}},
+  0},
+ {<<"jsone">>,{pkg,<<"jsone">>,<<"1.8.0">>},0},
+ {<<"typerefl">>,
+  {git,"https://github.com/ieQu1/typerefl.git",
+       {ref,"310b82ff02f96207c519b9556491433b6ea02d01"}},
+  1}]}.
+[
+{pkg_hash,[
+ {<<"getopt">>, <<"C73A9FA687B217F2FF79F68A3B637711BB1936E712B521D8CE466B29CBF7808A">>},
+ {<<"jsone">>, <<"347FF1FA700E182E1F9C5012FA6D737B12C854313B9AE6954CA75D3987D6C06D">>}]},
+{pkg_hash_ext,[
+ {<<"getopt">>, <<"53E1AB83B9CEB65C9672D3E7A35B8092E9BDC9B3EE80721471A161C10C59959C">>},
+ {<<"jsone">>, <<"08560B78624A12E0B5E7EC0271EC8CA38EF51F63D84D84843473E14D9B12618C">>}]}
+].
